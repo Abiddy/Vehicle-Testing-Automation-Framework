@@ -1,6 +1,7 @@
 from typing import Dict
 import pandas as pd
 import matplotlib.pyplot as plt
+from datetime import datetime
 
 class MetricsCollector:
     def __init__(self):
@@ -65,4 +66,18 @@ class MetricsCollector:
         plt.figure(figsize=(10, 6))
         df.plot(kind='bar')
         plt.title('Test Metrics Overview')
-        plt.savefig('test_metrics.png') 
+        plt.savefig('test_metrics.png')
+
+    def save_metrics_history(self):
+        """
+        Save current metrics to historical data
+        """
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        history_entry = {
+            'timestamp': timestamp,
+            'defect_density': self.kpi_metrics['defect_density'] * 100,
+            'test_coverage': self.kpi_metrics['test_coverage'],
+            'performance_score': self.kpi_metrics['performance_score']
+        }
+        # You might want to store this in a database in a real application
+        return history_entry 
