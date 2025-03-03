@@ -1,0 +1,10 @@
+setup.py
+src/vtaf/__init__.py
+src/vtaf/config.py
+src/vtaf/metrics.py
+src/vtaf/protocols.py
+src/vtaf/test_framework.py
+src/vtaf.egg-info/PKG-INFO
+src/vtaf.egg-info/SOURCES.txt
+src/vtaf.egg-info/dependency_links.txt
+src/vtaf.egg-info/top_level.txt
