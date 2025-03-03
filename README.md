@@ -1,5 +1,8 @@
 # Vehicle Testing Automation Framework (VTAF)
 
+<img width="1393" alt="Screenshot 2025-03-03 at 1 23 29 PM" src="https://github.com/user-attachments/assets/81066b3f-1114-4c10-a830-ee0e826410cc" />
+
+
 VTAF is a comprehensive testing framework designed for Software-Defined Vehicle (SDV) platforms, focusing on automated testing of vehicle communication protocols, quality metrics collection, and performance analysis.
 
 ## 🚀 Features
